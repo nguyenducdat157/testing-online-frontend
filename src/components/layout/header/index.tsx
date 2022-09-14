@@ -5,11 +5,16 @@ import Container from "@mui/material/Container";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import * as React from "react";
+
 import { ReactComponent as LogoIcon } from "src/assets/icons/logo-toeic.svg";
 import AppDropDown from "src/components/core/app-dropdown";
 import useStyles from "./styles";
 
 const pages = [
+  {
+    label: "",
+    link: "",
+  },
   {
     label: "Practice",
     link: "practice",
@@ -40,7 +45,9 @@ const Header = () => {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <LogoIcon />
+          <Typography component={Link} href="/">
+            <LogoIcon />
+          </Typography>
 
           {/* <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton

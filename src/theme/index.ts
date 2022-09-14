@@ -342,7 +342,7 @@ const theme = createTheme({
     borderRadius: 4,
   },
   typography: {
-    fontFamily: "Poppins",
+    fontFamily: "Roboto",
     fontSize: 16,
     h1: {
       fontSize: "40px",
